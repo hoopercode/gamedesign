@@ -1,3 +1,6 @@
+const playerOneShakeButton = document.querySelector("#shakePlayerOne");
+const playerTwoShakeButton = document.querySelector("#shakePlayerTwo");
+
 let images =[
   "assets/dice-01.svg",
   "assets/dice-02.svg",
@@ -6,10 +9,12 @@ let images =[
   "assets/dice-05.svg",
   "assets/dice-06.svg"];
 
+
+
 let dice = document.querySelectorAll("img");
 
 const roll = () => {
-  dice.forEach(function(die) {
+  dice.forEach((die) => {
     die.classList.add("shake");
   });
   setTimeout(function() {
@@ -28,5 +33,6 @@ const roll = () => {
   1000
   );
 }
+// playerOneShakeButton.addEventListener("click", () => roll());
+// playerTwoShakeButton.addEventListener("click", () => roll());
 
-roll();
