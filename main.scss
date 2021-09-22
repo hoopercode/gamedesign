@@ -1,4 +1,9 @@
 @import "./SCSS/pages/landing.scss";
-@import "./SCSS/abstracts/variables.scss";
+@import "./SCSS/base/abstracts.scss";
 @import "./SCSS/components/dice.scss";
 @import "./SCSS/components/gameGrid.scss";
+@import "./SCSS/layout/gridLandingOne.scss";
+@import "./SCSS/layout/gridLandingTwo.scss";
+@import "./SCSS/components/entryButton.scss";
+
+

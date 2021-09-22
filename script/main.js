@@ -13,7 +13,7 @@ let images =[
 
 let dice = document.querySelectorAll("img");
 
-const roll = () => {
+const rollPlayerOne = () => {
   dice.forEach((die) => {
     die.classList.add("shake");
   });
