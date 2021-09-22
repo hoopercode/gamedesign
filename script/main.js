@@ -1,6 +1,7 @@
 const playerOneShakeButton = document.querySelector("#shakePlayerOne");
 const playerTwoShakeButton = document.querySelector("#shakePlayerTwo");
 
+playerOneShakeButton.addEventListener(('click'), () => rollPlayerOne());
 let images =[
   "assets/dice-01.svg",
   "assets/dice-02.svg",
@@ -25,9 +26,16 @@ const rollPlayerOne = () => {
     ;
     let dieTwoValue = Math.floor((Math.random()*6))
     ;
+    let dieThreeValue = Math.floor((Math.random()*6))
+    ;
+    let dieFourValue = Math.floor((Math.random()*6))
+    ;
     document.querySelector("#die-1").setAttribute("src", images[dieOneValue]);
     document.querySelector("#die-2").setAttribute("src", images[dieTwoValue]);
-    document.querySelector("#total").innerHTML = "Your roll is " + ((dieOneValue +1) + (dieTwoValue +1))
+    document.querySelector("#die-3").setAttribute("src", images[dieThreeValue]);
+    document.querySelector("#die-4").setAttribute("src", images[dieFourValue]);
+    document.querySelector("#playOneTotal").innerHTML = "Your roll is " + ((dieOneValue +1) + (dieTwoValue +1))
+    document.querySelector("#playTwoTotal").innerHTML = "Your roll is " + ((dieThreeValue +1) + (dieFourValue +1))
   
   },
   1000
