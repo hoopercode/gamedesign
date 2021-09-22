@@ -212,7 +212,7 @@ button {
   font-family: sans-serif;
 }
 
-body {
+.gameBody {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,13 +222,16 @@ body {
   height: 100vh;
   width: 1200px;
   display: grid;
-  grid-template-columns: 1fr, 1fr, 0.5fr, 1fr, 1fr;
-  grid-template-rows: 0.2fr repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.4fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
 .diceGame__headerPlayerOne {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   grid-area: 1/1/3/3;
   text-align: center;
   margin-top: 5px;
@@ -237,9 +240,13 @@ body {
 
 .diceGame__headerPlayerOne h1 {
   color: #44cf6c;
+  font-size: 40px;
 }
 
-.diceGame__headerPlayerOne {
+.diceGame__headerPlayerTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-area: 1/4/3/6;
   text-align: center;
   margin-top: 5px;
@@ -248,14 +255,37 @@ body {
 
 .diceGame__headerPlayerTwo h1 {
   color: #44cf6c;
+  font-size: 40px;
+}
+
+.diceGame__score-header-one {
+  grid-area: 2/1/3/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diceGame__score-header-one h2 {
+  color: #11998e;
+}
+
+.diceGame__score-header-two {
+  grid-area: 2/4/3/6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diceGame__score-header-two h2 {
+  color: #11998e;
 }
 
 .diceGame__scoreDetailsPlayerOne {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  grid-area: 2/1/4/3;
+  align-items: flex-start;
+  grid-area: 3/1/5/3;
   margin-top: 20px;
 }
 
@@ -263,8 +293,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  grid-area: 2/4/4/6;
+  align-items: flex-start;
+  grid-area: 3/4/5/6;
   margin-top: 20px;
 }
 
@@ -272,15 +302,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-area: 4/3/5/4;
+  grid-area: 5/3/6/4;
 }
 
 .div5 {
-  grid-area: 4/4/6/6;
+  grid-area: 5/4/7/6;
 }
 
 .div6 {
-  grid-area: 4/1/6/3;
+  grid-area: 5/1/8/3;
 }
 
 .dicePlayOne {
@@ -499,7 +529,7 @@ body {
   border-color: #44cf6c;
 }
 
-.b-contain input[type=checkbox]:disabled ~ .b-input {
+.b-contain input[type=checkbox] ~ .b-input {
   background: #f1f5f8;
   border-color: #b8c2cc;
   opacity: 0.6;
