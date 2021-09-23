@@ -276,9 +276,15 @@ button {
 
 .diceGame__score-header-two {
   grid-area: 2/4/3/6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+#myprogressBar {
+  width: 1%;
+  height: 35px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 32px;
+  color: black;
 }
 
 .diceGame__score-header-two h2 {
@@ -584,7 +590,7 @@ p {
   transition: background 0.2s;
   flex: 1;
   font-family: "helvetica neue";
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 200;
 }
 
