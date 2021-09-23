@@ -14,7 +14,7 @@
 
 .diceGame {
   height: 100vh;
-  width: 1200px;
+  width: 1800px;
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
   grid-template-rows: 0.4fr 0.4fr 1fr 1fr 1fr 1fr;
@@ -33,9 +33,13 @@
     height: 50px;
   }
   .diceGame__headerPlayerOne h1 {
-  color: #44cf6c;
-  font-size: 40px;
-  
+    text-transform: uppercase;
+    background: linear-gradient(to right, #44CF6C 0%, #32A287 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: {
+      size: 40px
+    };
   }
 
   .diceGame__headerPlayerTwo { 
@@ -49,9 +53,14 @@
   }
 
   .diceGame__headerPlayerTwo h1 {
-      color: #44cf6c;
-      font-size: 40px;
-      }
+    text-transform: uppercase;
+    background: linear-gradient(to right, #44CF6C 0%, #32A287 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: {
+      size: 40px
+    };
+  }
 
 
   .diceGame__score-header-one{
@@ -62,7 +71,13 @@
   }
 
   .diceGame__score-header-one h2{
-    color: #11998e;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #44CF6C 0%, #32A287 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: {
+      size: 24px
+    };
   }
 
   .diceGame__score-header-two {
@@ -73,12 +88,18 @@
   }
 
   .diceGame__score-header-two h2{
-    color: #11998e;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #44CF6C 0%, #32A287 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: {
+      size: 24px
+    };
   }
   .diceGame__scoreDetailsPlayerOne { 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:flex-start;
     grid-area: 3 / 1 / 5 / 3;
     margin-top: 20px;
@@ -88,7 +109,7 @@
   .diceGame__scoreDetailsPlayerTwo { 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:flex-start;
     grid-area: 3 / 4 / 5 / 6;
     margin-top: 20px;
@@ -97,7 +118,7 @@
 
   .diceGame__roll-button {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     grid-area: 5 / 3 / 6 / 4;
   }

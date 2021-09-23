@@ -1,3 +1,9 @@
+.playerRules__heading {
+  width: auto;
+  height: 200px;
+}
+
+
 .playerRules {
   height: 95vh;
   display: grid;
@@ -31,10 +37,10 @@
 }
 
 .startGame {
-  grid-area: 4 / 3 / 6 / 5;
+  grid-area: 4 / 2 / 6 / 6;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
 }
 
